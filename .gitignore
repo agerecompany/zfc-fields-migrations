@@ -1,0 +1,16 @@
+#IDE files
+.idea
+
+# Composer files
+composer.lock
+vendor
+
+# Local configs
+config/autoload/*.local.php
+
+# Data
+data/logs/
+data/cache/
+data/sessions/
+data/tmp/
+temp/

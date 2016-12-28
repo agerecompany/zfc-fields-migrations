@@ -1,0 +1,35 @@
+{
+  "name": "agerecompany/zfc-fields-migrations",
+  "description": "ZF2 module which automates some aspects of working with permission system",
+  "type": "library",
+  "homepage": "https://github.com/agerecompany/zfc-fields-migrations",
+  "license": "MIT",
+  "keywords": [
+    "zfc-fields-migrations",
+    "agere"
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^5.5||^7",
+    "zendframework/zend-config": "^2.5",
+    "zendframework/zend-servicemanager": "^2.5",
+    "zendframework/zend-db": "^2.5",
+    "zendframework/zend-modulemanager": "^2.5",
+    "zendframework/zend-view": "^2.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8",
+    "mockery/mockery": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Agere\\ZfcFieldsMigrations\\": "src/",
+      "AgereTest\\ZfcFieldsMigrations\\": "test/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php -r \"mkdir('data/ZfcFieldsMigrations', 0775, true);\""
+    ]
+  }
+}
